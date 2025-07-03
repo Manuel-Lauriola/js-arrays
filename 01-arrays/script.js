@@ -35,6 +35,7 @@ const firstTeacher = teachers[0];
 teachers.push("Vanessa")
 
 // 6. Aggiungi un insegnante di nome 'Sarah' all'inizio dell'array teachers
+teachers.unshift("Sarah")
 
 // 7. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
