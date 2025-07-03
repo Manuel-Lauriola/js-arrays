@@ -11,9 +11,9 @@ console.log(teachers)
 
 // 1. Utilizzando un indice sull'array teachers, cambia il valore della
 // variabile fourthTeacher qui sotto in modo che sia il quarto insegnante elencato nell'array
-// const fourthTeacher =;
-teachers.splice(3, 2, "Carlo", "Phil")
-  console.log(teachers)
+const fourthTeacher = teachers[3];
+// teachers.splice(3, 2, "Carlo", "Phil")
+//   console.log(teachers)
 
 // 2. Sostituisci il quinto insegnante nell'array teachers con 'Patrick'
 teachers[4] = "Patrick"
@@ -44,11 +44,13 @@ const lewisIndex = teachers.indexOf("Lewis");
 
 // 8. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
-// const isTeachersEmpty = message;
-  if (teachers.length !== 0){
-    const message = `l'array non è vuoto, contiene ${teachers.length} elementi`;
-    console.log(message)
+const isTeachersEmpty = teachers.length === 0;
+
+let message;
+  if (isTeachersEmpty){
+    message = `l'array non è vuoto, contiene ${teachers.length} elementi`;
   }
     else {
       message = `l'array è vuoto`
     }
+console.log(message)
